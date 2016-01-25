@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Placement extension",
+  "description": "notification for companies for placement IITMadras",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "notifications",
+    "storage",
+    "http://placement.iitm.ac.in/students/login.php",
+    "http://placement.iitm.ac.in/students/home.php",
+    "activeTab",
+    "http://*/*","https://*/*","https://ajax.googleapis.com/"
+  ],
+  "background":{
+     "script":["popup.js"]
+  }
+}
